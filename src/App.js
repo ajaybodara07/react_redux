@@ -3,10 +3,10 @@ import { connect } from "react-redux";
 import { notification } from "antd";
 import styled from 'styled-components';
 import 'antd/dist/antd.css';
-import { Staff_Party_Master_Get, Staff_Party_Master_Delete, Staff_Party_Master_Update, Staff_Date_Update } from './store/action/staff_action';
 import Search from '../src/asset/img/Search.png';
 import Massage from '../src/asset/img/massage.png';
 import deleteimg from '../src/asset/img/delete.png';
+import { Staff_Party_Master_Get, Staff_Party_Master_Delete, Staff_Party_Master_Update, Staff_Date_Update } from './store/action/staff_action';
 
 const Attendees = styled.div`
   display: block;
@@ -15,6 +15,7 @@ const Attendees = styled.div`
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 10px;
 `;
+
 const TitileWappper = styled.div`
     display: flex;
     align-items: center;
@@ -22,14 +23,17 @@ const TitileWappper = styled.div`
     padding: 20px 40px;
     border-bottom: 1px solid #d7d7d7;
 `;
+
 const AttendeesTitile = styled.h2`
   display:block;
   color: #489f9b;
   margin: 0;
 `;
+
 const AttendeesSearch = styled.div`
   display:flex;
 `;
+
 const SearchBox = styled.input`
   display: block;
   border: 1px solid #ccc;
@@ -43,6 +47,7 @@ const SearchBox = styled.input`
     color:#6b6c6b;
   }
 `;
+
 const InviteButton = styled.button`
   display: block;
   color: #fff;
@@ -53,6 +58,7 @@ const InviteButton = styled.button`
   font-weight: 700;
   cursor: pointer;
 `;
+
 const AttendeesItem = styled.div`
 display: flex;
 align-items: center;
@@ -61,11 +67,13 @@ border-bottom: 1px solid #d7d7d7;
 margin: 0px 40px;
 padding: 20px 0px;
 `;
+
 const Contentname = styled.div`
 display: block;
 color: #6b6c6b;
 font-size: 18px;
 `;
+
 const TimeSet = styled.span`
 color: #fff;
 background: #64b6d2;
@@ -74,20 +82,24 @@ padding: 1px 9px 2px 9px;
 border-radius: 50px;
 font-weight: 100;
 `;
+
 const SessionStart = styled.div`
 display: flex;
 align-items: center;
 `;
+
 const SessionText = styled.p`
 display: block;
 margin: 0;
 color: #49a09c;
 font-size: 18px;
 `;
+
 const SearchBoxMain = styled.div`
   display: block;
   position: relative;
 `;
+
 const SearchImg = styled.img`
 display: block;
 position: absolute;
@@ -96,11 +108,13 @@ right: 25px;
 transform: translateY(-50%);
 width: 17px;
 `;
+
 const SessionStartImg = styled.img`
   display: block;
   width: 20px;
   margin: 0px 20px;
 `;
+
 const Sessiondeleteimg = styled.img`
   display: block;
   width: 16px;
